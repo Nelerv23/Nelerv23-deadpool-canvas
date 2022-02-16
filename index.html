@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Project</title>
+    
+</head>
+<body>
+    <h1>A Dead-Pool with Canvas</h1>
+    <canvas id="myCanvas" width="1000" height="750" style="border:1px solid #e4e4e4;">
+    
+    </canvas>
+
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(500, 375, 250, 0, 4 * Math.PI);
+    ctx.fillStyle = "red";
+    ctx.fill();
+    ctx.stroke();
+    
+    var n = document.getElementById("myCanvas");
+    var ctx = c.getContext('2d');
+    ctx.beginPath();
+    ctx.arc(475,375,200,0.5*Math.PI,1.5*Math.PI);
+    ctx.fillStyle = "black";
+    ctx.fill();
+    ctx.stroke();
+
+    var v = document.getElementById("myCanvas");
+    var ctx = c.getContext('2d');
+    ctx.beginPath();
+    ctx.arc(525,375,200,0.5*Math.PI,1.5*Math.PI, 1.5*Math.PI,true);
+    ctx.fillStyle = "black";
+    ctx.fill();
+    ctx.stroke();
+
+    var a = document.getElementById("myCanvas");
+    var ctx = c.getContext('2d');
+    ctx.beginPath();
+    ctx.arc(425,325,100,0.5*Math.PI,1.1*Math.PI,);
+    ctx.fillStyle = "white";
+    ctx.fill();
+    ctx.stroke();
+
+    var b = document.getElementById("myCanvas");
+    var ctx = c.getContext('2d');
+    ctx.beginPath();
+    ctx.arc(575,325,100,0.5*Math.PI,1.9*Math.PI, true);
+    ctx.fillStyle = "white";
+    ctx.fill();
+    ctx.stroke();
+
+
+    
+    </script> 
+</body>
+</html>
